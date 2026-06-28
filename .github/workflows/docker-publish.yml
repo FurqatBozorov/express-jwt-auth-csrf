@@ -51,6 +51,7 @@ jobs:
           repository: ${{ env.GITOPS_REPO }}
           token: ${{ secrets.GITOPS_PAT }}
           path: gitops
+          persist-credentials: true
 
       - name: Update image tag in GitOps repo
         run: |
