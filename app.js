@@ -22,7 +22,7 @@ app.use(userRouter);
 const PORT = process.env.PORT || 4000;
 
 mongoose
-  .connect(process.env.MONDODB_URL)
+  .connect(process.env.MONGODB_URL)
   .then(() => {
     console.log("MongoDB connected");
     app.listen(PORT, () => {
